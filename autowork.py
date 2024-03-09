@@ -19,14 +19,18 @@ def set_channel():
     with open("info.txt", "w") as file:
         file.write(f"{token}")
 
+def send_message():
+    global choice
+    choice = random.choice(messages)
+    r = requests.post("https://discord.com/api/v9/channels/1212544929667092510/messages?limit=50", data=payload, headers=header)
+    time.sleep(random.randrange(5,20))
+
 if len(info) == 0:
     configure_info()
     print("Successfully configured Discord token! Run autowork.py to start the bot.")
     exit()
 
-payload = {
-    'content' : ".work"
-}
+messages = [".work", ".work", ".work", ".work", ".bet 5000", ".bal"]
 
 header = {
     'authorization': info[0]
@@ -35,5 +39,7 @@ header = {
 print("Auto work started! Press CTRL+C to stop.")
 
 while 1 == 1:
-    r = requests.post("https://discord.com/api/v9/channels/1212544929667092510/messages?limit=50", data=payload, headers=header)
-    time.sleep(random.randrange(5,20))
+    payload = {
+        'content' : random.choice(messages)
+    }
+    send_message()
