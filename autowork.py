@@ -21,6 +21,7 @@ def set_channel():
 
 if len(info) == 0:
     configure_info()
+    print("Successfully configured Discord token! Run autowork.py to start the bot.")
     exit()
 
 payload = {
