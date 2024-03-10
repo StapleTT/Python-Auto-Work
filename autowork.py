@@ -25,12 +25,16 @@ def send_message():
     r = requests.post("https://discord.com/api/v9/channels/1212544929667092510/messages?limit=50", data=payload, headers=header)
     time.sleep(random.randrange(3,10))
 
+def send_typing():
+    r = requests.post("https://discord.com/api/v9/channels/1212544929667092510/typing", headers=header)
+    time.sleep(random.randrange(1,2))
+
 if len(info) == 0:
     configure_info()
     print("Successfully configured Discord token! Run autowork.py to start the bot.")
     exit()
 
-messages = [".work", ".work", ".work", ".work", ".bet 5000", ".bal"]
+messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000" ".bal"]
 
 header = {
     'authorization': info[0]
@@ -42,4 +46,5 @@ while 1 == 1:
     payload = {
         'content' : random.choice(messages)
     }
+    send_typing()
     send_message()
