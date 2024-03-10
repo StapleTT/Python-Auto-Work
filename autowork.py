@@ -30,9 +30,11 @@ def send_typing():
     r = requests.post("https://discord.com/api/v9/channels/" + info[1] + "/typing", headers=header)
     time.sleep(random.randrange(1,2))
 
-if len(info) == 0:
+if (len(info) == 0):
+    print("Missing configuration files! Attempting to reconfigure...")
+    time.sleep(2)
     configure_info()
-    print("Successfully configured! Run autowork.py to start the bot.")
+    print("Successfully configured! Run autowork.py again to start the bot.")
     exit()
 
 messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000" ".bal"]
