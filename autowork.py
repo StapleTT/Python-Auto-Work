@@ -24,7 +24,7 @@ def send_message():
     global choice
     choice = random.choice(messages)
     r = requests.post("https://discord.com/api/v9/channels/" + info[1] + "/messages?limit=50", data=payload, headers=header)
-    time.sleep(random.randrange(3,10))
+    time.sleep(random.randrange(2,5))
 
 def send_typing():
     r = requests.post("https://discord.com/api/v9/channels/" + info[1] + "/typing", headers=header)
@@ -37,7 +37,7 @@ if (len(info) == 0):
     print("Successfully configured! Run autowork.py again to start the bot.")
     exit()
 
-messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000" ".bal"]
+messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000", ".bal"]
 
 header = {
     'authorization': info[0]
