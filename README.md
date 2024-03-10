@@ -3,7 +3,7 @@ This is a bot that will automatically send the `.work` command every 5-20 second
 
 ## Installation    
 
-  ### Local Machine or Repl
+  ### Local Machine
 
  1. Clone the repository or download the code as a zip file and extract it to a folder:  
  
