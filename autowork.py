@@ -23,7 +23,7 @@ def send_message():
     global choice
     choice = random.choice(messages)
     r = requests.post("https://discord.com/api/v9/channels/1212544929667092510/messages?limit=50", data=payload, headers=header)
-    time.sleep(random.randrange(5,20))
+    time.sleep(random.randrange(3,10))
 
 if len(info) == 0:
     configure_info()
