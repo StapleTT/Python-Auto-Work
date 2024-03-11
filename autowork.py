@@ -49,7 +49,7 @@ print("Auto work started! Press CTRL+C to stop.")
 last_message = ".work"
 
 while 1 == 1:
-    if(last_message == ".bal"):
+    if(last_message == ".bal" or ".bet 5000" or ".bet 10000"):
         last_message = random.choice(messages)
     else:
         last_message = random.choice(messages2)
