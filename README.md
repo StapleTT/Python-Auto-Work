@@ -1,5 +1,5 @@
 # Python-Auto-Work    
-This is a bot that will automatically send the `.work` command every 5-20 seconds for the Seconomy bot.
+This is a bot that will automatically send the `.work`, `.bet`, or `.bal` command every 3-8 seconds for the Seconomy bot.
 
 ## Installation    
 
@@ -8,7 +8,7 @@ This is a bot that will automatically send the `.work` command every 5-20 second
  1. Clone the repository or download the code as a zip file and extract it to a folder:  
  
      ```
-     git clone https://github.com/xRiddin/Discord-Auto-message.git
+     git clone https://github.com/StapleTT/Python-Auto-Work.git
      ```
      
      If you do not have Git, you may also press the Download button (GitHub) and unzip the code.  
