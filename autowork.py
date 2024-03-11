@@ -53,8 +53,8 @@ while 1 == 1:
         last_message = random.choice(messages)
     else:
         last_message = random.choice(messages2)
-payload = {
+    payload = {
     'content' : last_message
-}
-send_typing()
-send_message()
+    }
+    send_typing()
+    send_message()
