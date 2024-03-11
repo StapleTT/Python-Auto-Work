@@ -37,7 +37,8 @@ if (len(info) == 0):
     print("Successfully configured! Run autowork.py again to start the bot.")
     exit()
 
-messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000", ".bal"]
+messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000",]
+messages2 = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000", ".bal"]
 
 header = {
     'authorization': info[0]
@@ -45,9 +46,15 @@ header = {
 
 print("Auto work started! Press CTRL+C to stop.")
 
+last_message = ".work"
+
 while 1 == 1:
-    payload = {
-        'content' : random.choice(messages)
-    }
-    send_typing()
-    send_message()
+    if(last_message == ".bal"):
+        last_message = random.choice(messages)
+    else:
+        last_message = random.choice(messages2)
+payload = {
+    'content' : last_message
+}
+send_typing()
+send_message()
