@@ -8,7 +8,7 @@ This is a bot that will automatically send the `.work`, `.bet`, or `.bal` comman
  1. Clone the repository or download the code as a zip file and extract it to a folder:  
  
      ```
-     git clone https://github.com/xRiddin/Discord-Auto-message.git
+     git clone https://github.com/StapleTT/Python-Auto-Work.git
      ```
      
      If you do not have Git, you may also press the Download button (GitHub) and unzip the code.  
