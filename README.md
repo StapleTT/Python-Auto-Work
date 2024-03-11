@@ -1,5 +1,5 @@
 # Python-Auto-Work    
-This is a bot that will automatically send the `.work` command every 5-20 seconds for the Seconomy bot.
+This is a bot that will automatically send the `.work`, `.bet`, or `.bal` command every 3-8 seconds for the Seconomy bot.
 
 ## Installation    
 
