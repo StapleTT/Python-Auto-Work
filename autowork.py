@@ -37,7 +37,7 @@ if (len(info) == 0):
     print("Successfully configured! Run autowork.py again to start the bot.")
     exit()
 
-messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000",]
+messages = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000"]
 messages2 = [".work", ".work", ".work", ".work", ".work", ".work", ".work", ".bet 5000", ".bet 10000", ".bal"]
 
 header = {
