@@ -17,7 +17,7 @@ This is a bot that will automatically send the `.work`, `.bet`, or `.bal` comman
  2. Navigate to the project directory in your terminal:  
  
      ```
-     cd /Downloads/Python-Auto-Work/
+     cd /Python-Auto-Work/
      ```
  
  3. Install the required packages using pip:  
